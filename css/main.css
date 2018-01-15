@@ -246,7 +246,7 @@ section:nth-child(2n) {
 }
 
 #section-3 {
-  background-image: url('https://fotos.subefotos.com/96e9bada345eaa605f5d3550cf8314cco.jpg');
+  background-image: url('../assets/images/conduce.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
