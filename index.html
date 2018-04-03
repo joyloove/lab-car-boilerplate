@@ -160,10 +160,34 @@
               <input type="text" id="destination-input" placeholder="Ingrese su destino">
             </div>
             <div class="form-group">
-              <button type="button" id="search" class="btn btn-default text-uppercase center-block">¡Trazar ruta!</button>
+              <div class="">
+                <button type="button" id="getRoute" data-toggle="modal" data-target="#myModalPrice" class="btn btn-default btn-lg center-block btn-app">¡Trazar Ruta!</button>
+                <div id="rate" class=""></div>
+              </div>
             </div>
           </form>
         </article>
+
+        <!-- Modal de tarifa -->
+        <div class="colorModal modal fade" id="myModalPrice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+           <div class="modal-dialog" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                 <h3 class="modal-title" id="myModalLabel"><strong>Resumen: </strong></h3>
+               </div>
+               <div class="modal-body">
+                 <p><strong>Origen: </strong><span id="origin"></span></p>
+                 <p><strong>Destino: </strong><span id="destination"></span></p>
+                 <p><strong>Tiempo de viaje aproximado: </strong><span id="duration"></span></p>
+                 <p><strong>Tarifa: </strong><span id="price"></span></p>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+               </div>
+             </div>
+           </div>
+         </div>
 
         <!-- Map section -->
         <article class="col-xs-11 col-md-5 col-md-offset-1">
@@ -372,8 +396,7 @@
   <!-- Scripts function -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiDlZrXpGScHfnJnfwyziB76kkUAu0i-w&libraries=places&callback=initMap"
-  async defer></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQSqxH-7nQ04FH6hWGyK8sugCQM6sWSWI&callback=initMap&libraries=places" type="text/javascript"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
 
